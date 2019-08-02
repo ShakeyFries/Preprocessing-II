@@ -276,3 +276,26 @@ header nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  background: #057375;
+  color: white;
+  height: 45px;
+  border-radius: 16px;
+  font-size: 14pt;
+}
+.home .inverse-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.home .inverse-content .content-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column-reverse;
+}
