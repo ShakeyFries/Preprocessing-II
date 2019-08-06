@@ -21,39 +21,73 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
-    
+  }
+//mobile
+    @media (max-width: 500px) {
+      .content-section {
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 20px;
+        flex-flow: column wrap;
+        justify-content: center;
+      }
+    }
+  
     .text-content {
       width: 48%;
       padding-right: 1%;
     }
-
+      @media (max-width: 500px) {
+        .text-content {
+          width: 98%;
+          margin: 0px auto;
+        }
+      }
+    
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+      @media (max-width: 500px){
+        width: 98%;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
       }
     }
-  }
+  
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-
+    //mobile
+    @media (max-width: 500px) {
+        width: 98%;
+        margin: 0px auto;
+        display: flex;
+    }
+  
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+    
+      @media (max-width: 500px) {
+          margin-top: 30px;
+          order: 0;
+      }
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media (max-width: 500px) {
+        order: 1;
+      }
     }
   }
-
+ 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
@@ -68,24 +102,32 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+  //mobile
+    @media (max-width: 500px) {
+      width: 85%;
+      margin: 0px auto;
+      margin-top: 20px;
+      flex-flow: column wrap;
+      justify-content: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+  //mobile
+      @media (max-width: 500px){
+        width: 98%;
+        margin: 0px auto;
+        margin-top: 15px;
+      }
     }
   }
   //Button mix in//
   .btn {
     .button();
   }
-  //mobile
-  .inverse-content{
-    .displayFlex(space-evenly, center);
-    flex-direction: column-reverse;
-    
-    .content-section{
-      .displayFlex(space-around, center);
-      flex-direction: column-reverse;
-    }
-}
+
+  footer{
+    margin-top: 1%;
+  }
 }// home
