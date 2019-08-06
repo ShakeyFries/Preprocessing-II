@@ -1,1 +1,35 @@
 // Navigation Styles here
+header{
+      .displayFlex(space-between, center);
+      
+      nav {
+            width: 40%;
+            .displayFlex(space-between, center);
+            padding: 40px 0px;
+            
+            a {
+                  text-decoration: none; 
+                  color: black;
+                  font-size: 1.6rem;
+            }
+      }
+}
+//Mobile Navigation
+@media(max-width:500px){
+      header {
+            .displayFlex(center, center);
+            flex-direction: column;
+
+            h1{
+                  .displayFlex(center, center);
+                  margin-top: 20px;
+            }
+                  
+            nav {
+                  .displayFlex(space-evenly, none);
+                  width:100%;
+            }
+      }
+}
+
+      
